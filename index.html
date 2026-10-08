@@ -16,7 +16,10 @@
     h2 { margin-top:0; font-size:18px; color:var(--teal-dark); }
     ol, ul { padding-left:22px; margin:8px 0; }
     li { margin-bottom:6px; }
-    .btn { display:inline-block; background:var(--teal); color:#fff; text-decoration:none; padding:13px 22px; border-radius:12px; font-weight:700; margin-top:8px; }
+    .btns { display:flex; flex-wrap:wrap; gap:10px; margin-top:10px; }
+    .btn { display:inline-block; background:var(--teal); color:#fff; text-decoration:none; padding:13px 22px; border-radius:12px; font-weight:700; }
+    .btn.alt { background:var(--teal-light); color:var(--teal-dark); }
+    .email-box { background:var(--teal-light); border-radius:12px; padding:12px 14px; margin:10px 0; font-weight:700; color:var(--teal-dark); word-break:break-all; user-select:all; }
     .note { background:var(--teal-light); border-radius:12px; padding:14px; color:var(--teal-dark); font-size:14px; }
     footer { text-align:center; color:var(--muted); font-size:13px; padding-bottom:30px; }
     code { background:var(--teal-light); padding:2px 6px; border-radius:6px; }
@@ -31,15 +34,23 @@
   <main>
     <div class="card">
       <h2>How to delete your account</h2>
-      <p>You can request deletion of your KhaoJi account and the data linked to it in either of the two ways below.</p>
+      <p>You can request deletion of your KhaoJi account and the data linked to it by emailing us.</p>
 
-      <h3>Option 1: Request by email</h3>
       <ol>
-        <li>Send an email to <a href="mailto:khaojiofficial@gmail.com?subject=Account%20Deletion%20Request&body=Hello%20KhaoJi%20Team%2C%0A%0APlease%20delete%20my%20account.%0A%0AFull%20name%3A%20%0ARegistered%20phone%20number%20or%20email%3A%20%0A%0AThank%20you.">khaojiofficial@gmail.com</a> from your registered email, or mention your registered phone number.</li>
+        <li>Send an email to the address below from your registered email, or mention your registered phone number.</li>
         <li>Use the subject <code>Account Deletion Request</code> and include your full name and the phone number or email used in the app.</li>
         <li>We will verify your identity and delete your account within <strong>7 days</strong>. You will get a confirmation reply.</li>
       </ol>
-      <a class="btn" href="mailto:khaojiofficial@gmail.com?subject=Account%20Deletion%20Request&body=Hello%20KhaoJi%20Team%2C%0A%0APlease%20delete%20my%20account.%0A%0AFull%20name%3A%20%0ARegistered%20phone%20number%20or%20email%3A%20%0A%0AThank%20you.">Send deletion request</a>
+
+      <div class="email-box">khaojiofficial@gmail.com</div>
+
+      <div class="btns">
+        <a class="btn" target="_blank" rel="noopener"
+           href="https://mail.google.com/mail/?view=cm&fs=1&to=khaojiofficial@gmail.com&su=Account%20Deletion%20Request&body=Hello%20KhaoJi%20Team%2C%0A%0APlease%20delete%20my%20account.%0A%0AFull%20name%3A%20%0ARegistered%20phone%20number%20or%20email%3A%20%0A%0AThank%20you.">Open Gmail to send request</a>
+        <a class="btn alt"
+           href="mailto:khaojiofficial@gmail.com?subject=Account%20Deletion%20Request&body=Hello%20KhaoJi%20Team%2C%0A%0APlease%20delete%20my%20account.%0A%0AFull%20name%3A%20%0ARegistered%20phone%20number%20or%20email%3A%20%0A%0AThank%20you.">Use my email app</a>
+      </div>
+      <p style="font-size:13px;color:var(--muted);margin-bottom:0">If the buttons do not open anything, copy the email address above and send your request from any email app.</p>
     </div>
 
     <div class="card">
@@ -66,7 +77,7 @@
   </main>
 
   <footer>
-    &copy; KhaoJi &middot; <a href="mailto:khaojiofficial@gmail.com">khaojiofficial@gmail.com</a>
+    &copy; KhaoJi &middot; khaojiofficial@gmail.com
   </footer>
 </body>
 </html>
